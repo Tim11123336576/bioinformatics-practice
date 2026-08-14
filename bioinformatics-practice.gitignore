@@ -1,0 +1,68 @@
+# ==== Raw & intermediate sequencing data (тяжёлые, не для git) ====
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.sam
+*.bam
+*.bam.bai
+*.cram
+*.cram.crai
+
+# ==== Референсные геномы и индексы ====
+*.fasta
+*.fa
+*.fna
+*.fasta.gz
+*.fa.gz
+*.fai
+*.dict
+# BWA-индексы
+*.amb
+*.ann
+*.bwt
+*.pac
+*.sa
+# minimap2/другие индексы
+*.mmi
+
+# ==== Результаты вызова вариантов (большие, воспроизводимые) ====
+*.vcf
+*.vcf.gz
+*.vcf.gz.tbi
+*.g.vcf
+*.g.vcf.gz
+
+# ==== Промежуточные/временные файлы ====
+*.tmp
+*.log
+*.sorted.bam
+*.dedup.bam
+*.pileup
+
+# ==== Python ====
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints/
+.venv/
+venv/
+env/
+*.egg-info/
+
+# ==== Jupyter/Colab ====
+.ipynb_checkpoints
+
+# ==== OS junk ====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==== IDE/редакторы ====
+.vscode/
+.idea/
+*.swp
+
+# ==== Архивы (обычно это сырые данные, не выкладывать целиком) ====
+*.zip
+*.tar.gz
+*.tar
